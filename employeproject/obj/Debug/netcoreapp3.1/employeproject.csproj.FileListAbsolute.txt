@@ -1,0 +1,10 @@
+C:\Users\basel\source\repos\asp.net_api_employe_sql\employeproject\bin\Debug\netcoreapp3.1\employeproject.deps.json
+C:\Users\basel\source\repos\asp.net_api_employe_sql\employeproject\bin\Debug\netcoreapp3.1\employeproject.dll
+C:\Users\basel\source\repos\asp.net_api_employe_sql\employeproject\bin\Debug\netcoreapp3.1\employeproject.pdb
+C:\Users\basel\source\repos\asp.net_api_employe_sql\employeproject\obj\Debug\netcoreapp3.1\employeproject.csproj.AssemblyReference.cache
+C:\Users\basel\source\repos\asp.net_api_employe_sql\employeproject\obj\Debug\netcoreapp3.1\employeproject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\basel\source\repos\asp.net_api_employe_sql\employeproject\obj\Debug\netcoreapp3.1\employeproject.AssemblyInfoInputs.cache
+C:\Users\basel\source\repos\asp.net_api_employe_sql\employeproject\obj\Debug\netcoreapp3.1\employeproject.AssemblyInfo.cs
+C:\Users\basel\source\repos\asp.net_api_employe_sql\employeproject\obj\Debug\netcoreapp3.1\employeproject.csproj.CoreCompileInputs.cache
+C:\Users\basel\source\repos\asp.net_api_employe_sql\employeproject\obj\Debug\netcoreapp3.1\employeproject.dll
+C:\Users\basel\source\repos\asp.net_api_employe_sql\employeproject\obj\Debug\netcoreapp3.1\employeproject.pdb

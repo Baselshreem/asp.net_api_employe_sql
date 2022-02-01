@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+   <!--?callback=mm في البارميتر الاستدعاء -->
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var ulemployes = $('#ulemployes');
+            $('#btn').click(function () {
+               var username= $('#textusername').val();
+               var password=  $('#textpassword').val();
+                $.ajax({
+                    type: 'Get',
+                    url: 'https://localhost:44334/api/employe',
+                    dataType: 'json',
+                    headers: {
+                        'Authorization': 'Basic ' + btoa(username + ':' + password)
+
+
+                    },
+                    success: function (data) {
+                        ulemployes.empty();
+                        $.each(data, function (index, val) {
+
+                            var fullname = val.firstname + '' + val.lastname;
+                            ulemployes.append('<li>' + fullname + '('+val.gender + ')</li>')
+
+
+                        });
+                    },
+                    complete: function (jqXHR) {
+
+                        if (jqXHR.status == '401') {
+                            ulemployes.empty();
+                            ulemployes.append('<li style="color:red">' + jqXHR.status + ':' + jqXHR.statusText + '</li>')
+                        }
+                    }
+
+                });
+
+            });
+
+            $('#btncler').click(function () {
+                ulemployes.empty();
+            });
+        });
+    </script>
+    <title></title>
+</head>
+<body>
+    username :<input type="text" id="textusername" />
+    password :<input type="password" id="textpassword"/>
+                    
+    <input id="btn" type="button" value="Get" />
+    <input id="btncler" type="button" value="clear" />
+    <ul id="ulemployes">
+    </ul>
+</body>
+</html>
